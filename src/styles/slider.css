@@ -1,0 +1,9 @@
+.alice-carousel__dots{
+    display: none;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn{
+    margin-top: 30px;
+    /* outline: red 1px solid; */
+}
