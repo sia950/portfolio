@@ -13,7 +13,7 @@ type SlidePropsType = {
     userText: string
 }
 
-const Slide = (props:SlidePropsType) => {
+const Slide:React.FC<SlidePropsType> = (props:SlidePropsType) => {
     return (
         <S.FeedbackWrapper>
             <S.ClientPhoto src={props.userPhoto} alt="client photo" />
