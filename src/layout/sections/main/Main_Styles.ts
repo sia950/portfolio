@@ -8,13 +8,14 @@ import { font } from '../../../styles/Common'
 /////////////////////////////////////////////////////
 const MainSection = styled.section`
     z-index: 1;
-    min-height: 100vh; /* keeps hero full screen */
+    min-height: 100vh; 
 
     width: 100%;
     position: relative;
 
     display: flex;
     align-items: center;
+
 `
 
 /////////////////////////////////////////////////////
@@ -41,11 +42,14 @@ const SectionBgc = styled.div`
     background-color: ${theme.colors.primaryBg};
     width: 50%;
 
-    /* mobile: full width split */
+
+
     @media ${theme.media.preTablet} {
         width: 100%;
         height: 50%;
+        
     }
+
 `
 
 /////////////////////////////////////////////////////
@@ -64,6 +68,7 @@ const BgPhoto = styled.div`
         width: 100%;
         height: 50%;
     }
+
 `
 
 /////////////////////////////////////////////////////
@@ -80,13 +85,20 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
 
+
     @media ${theme.media.preTablet} {
 
         justify-content: flex-start;
 
         margin-top: calc(50vh + 60px);
         margin-bottom: 70px;
+
     }
+
+    @media ${theme.media.mobile} {
+        margin-bottom: 38px;
+    }
+
 `
 
 /////////////////////////////////////////////////////
@@ -101,7 +113,7 @@ const About = styled.div`
     ${font({
         fontWeight: 700,
         Fmax: 90,
-        Fmin: 50,
+        Fmin: 35,
         fontFamily: "'Playfair Display', sans-serif"
     })};
     
@@ -141,9 +153,13 @@ const About = styled.div`
             margin-top: 28px;
         }
     }
+    
     @media ${theme.media.mobile} {
         h1 {
             width: 335px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            min-height: 60px;
         }
     }
 `
